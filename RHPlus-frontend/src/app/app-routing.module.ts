@@ -52,7 +52,7 @@ import { ArchivedEmployesComponent } from './components/admin-components/archive
 const routes: Routes = [
   {
     path: '', component : PublicLayoutComponent, children: [
-      
+
       {path: '',redirectTo: 'home', pathMatch: 'full'},
       { path: 'home',component: HomeComponent},
       { path: 'candidat', component: InfoCandidateComponent },
@@ -62,16 +62,16 @@ const routes: Routes = [
 
     ]
   },
-  
+
 
   { path: '', component: SidebarComponent,children:[
 
-  {path:'', redirectTo:'dashboard' , pathMatch:'full'},
+  // {path:'', redirectTo:'dashboard' , pathMatch:'full'},
   {path:'dashboard', component: DashboardComponent},
   {path:'profil', component: UpdateProfilComponent},
   { path: 'addEmploye', component: AddEmployeComponent },
-  { path: 'demandeConge', component: DemandeCongeComponent }, 
-  
+  { path: 'demandeConge', component: DemandeCongeComponent },
+
   { path: 'listEmployes', component: ListEmployesComponent },
   { path: 'archivedEmployes', component: ArchivedEmployesComponent },
   { path: 'todoList', component: TodoListComponent },
@@ -86,7 +86,7 @@ const routes: Routes = [
   { path: 'profilCandidat/:id', component: ProfilCandidatComponent },
   { path: 'congeRequest/:id', component: CongeRequestComponent },
   { path: 'info-employe/:id', component: InfoEmployeComponent },
-  
+
   { path: 'bilan-conges', component: BilanCongesComponent },
   { path: 'notesInternes', component: NotesInternesComponent },
   { path: 'employe-notesInternes', component: NotesInternesEmployeComponent },
@@ -99,9 +99,9 @@ const routes: Routes = [
   { path: 'presence-calendar/:id', component: PresenceCalendarComponent },
   { path: 'presence', component: PresenceAdminComponent },
   { path: 'holiday-calendar', component: HolidayCalendarComponent }]},
-  
 
- 
+
+
   { path: 'footer', component: FooterComponent },
 
 ];
